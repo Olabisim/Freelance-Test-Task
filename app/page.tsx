@@ -1,113 +1,141 @@
+import Card, { LineCard, SingleLineCard } from '@/components/Card'
+import P from '@/components/P'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className='background_image text-white px-4 md:pl-24 lg:l-32 lg:pr-0 pb-20'>
+
+          <div className='relative z-10'>
+            <div className='absolute left-[0px] -top-[200px] h-[400px] w-[400px]'>
+              <div className=''>
+                <img src="/../img/sphere_12.png" className='w-[400px] h-[400px]' />
+              </div>
+            </div>
+          </div>
+        
+      <div className='relative'>
+        <div className='absolute'>
+          <div className='background_image'>
+          </div>
+        </div>
+      </div>
+      <div className='background_image'>
+      <div className='block md:flex'>
+        <div className='w-full md:w-1/2 pt-28 md:pt-40'>
+          <div>
+            <p className='text-[#EB3A4A] text-[10px] pb-7'>LOREM IPSUM DOLOR</p>
+            <h2 className='text-[36px] md:text-[52px] font-bold leading-[3.2rem] text-[#E4E4E7] '>GAME-CHANGING INFRASTRUCTURE</h2>
+          </div>
+          <div>
+            <P className='w-full md:w-[70%]' text="A  decentralised, non-custodial social graph, empowering players to take full ownership of their gaming identities and enabling developers to build next-gen applications." />
+            <button className='bg-[#EB3A4A] text-white rounded-lg px-10 py-3 text-[14px] md:text-[16px]'>Join Discord</button>
+          </div>
+        </div>
+        <div className='w-full md:w-1/2 pt-4 md:pt-4'>
+          <div className='relative'>
+              <div className='absolute -top-20'>
+                  <img src="/../img/bg_1.png" />
+              </div>
+              <div className='absolute right-40 -top-20'>
+                  <img src="/../img/bg_22.png" width={800} height={400} className='-pt-20' />
+                <div className='relative'>
+                  <div className='flex flex-col items-center'>
+                    <div className='pb-5'>
+                      <img src='/../icons/logo.png' alt='pic ' />
+                      <div>
+                        <span className='text-xs block text-center'>User id:</span>
+                        <span className='text-lg block text-center'>XBorg001</span>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='border-2 rounded-full p-3'>
+                        <img src="/../icons/padlock.png" alt="padlock" />
+                      </div>
+                    </div>
+                    <div>
+                      <SingleLineCard title="Soulbound Launchpad" />
+                    </div>
+                    <div className='flex'>
+                      <SingleLineCard title="Soulbound Launchpad" />
+                      <SingleLineCard title="Soulbound Launchpad" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='absolute right-40'>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div className='flex flex-col items-center justify-center pt-28'>
+        <span className='bg-gradient-to-r from-[#2B2B2B] via-[#EB3A4A] to-[#2B2B2B] inline-block text-transparent bg-clip-text'>Scroll down</span>
+        <img src='/../icons/down.svg' alt="asd" />
+      </div>
+
+
+      <div className='flex flex-col justify-center items-center background_image'>
+        <div className='text-center w-full md:w-[70%] flex flex-col items-center'>
+          <h2 className='uppercase text-[36px] md:text-[52px] pt-40 font-bold leading-[3.2rem] text-[#E4E4E7]'>The value network of gaming</h2>
+          <div className='relative '>
+            <div className='absolute right-[640px] top-0 h-[100px] w-[100px]'>
+              <div className=''>
+                <img src="/../img/Spheres1.png" />
+              </div>
+            </div>
+          </div>
+          <P className='px-5 md:px-40' text="The fundamental protocol that allows anyone to create gaming applications built on top of player identities." />
+          
+          <div className='relative '>
+            <div className='absolute right-[548px] top-0 h-[100px] w-[100px]'>
+              <div className=''>
+                <img src="/../img/spheres.png" />
+              </div>
+            </div>
+          </div>
+          {/* <P></P> */}
+        </div>
+        <div className='block md:flex '> 
+
+        <Card title="Gaming social layer" text="Gamers take control of their data." imageText="card1" />
+        <Card title="Gaming social layer" text="Gamers take control of their data." imageText="card2" />
+      
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='pt-8 md:pt-16'>
+          <div className='block md:flex'>
+            
+            <div className='w-full md:w-[2/6]'>
+              <h2 className='text-[#E4E4E7] text-[28px] md:text-[36px] font-bold mt-24 leading-[2.55rem]'>THE NEW <br /> GAMING WEB</h2>
+              <P className='pr4 md:pr-32' text="At the core of the XBorg Data Graph Protocol lies a dynamic and interconnected network of gaming profiles. Each player's profile is represented as a unique ERC-721 NFT, complete with metadata unique to their gaming journey." />
+            </div>
+
+
+            <div className='w-full md:w-[4/6] pt-5 md:pt-16 relative z-20'>
+              <div className='flex flex-wrap'>
+                <LineCard title='MonkeyIslander872' imageText="logo1" />
+                <LineCard title='MonkeyIslander872' imageText="logo2" />
+                <LineCard title='MonkeyIslander872' imageText="logo3" />
+                <LineCard title='MonkeyIslander872' imageText="logo4" />
+                <LineCard title='MonkeyIslander872' imageText="logo5" />
+                <LineCard title='MonkeyIslander872' imageText="logo6" />
+              </div>
+            </div>
+          </div>
+          
+          <div className='relative z-10'>
+            <div className='absolute right-[0px] -top-[400px] h-[600px] w-[600px]'>
+              <div className=''>
+                <img src="/../img/spheres4.png" className='w-[600px] h-[600px]' />
+              </div>
+            </div>
+          </div>
+          
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
